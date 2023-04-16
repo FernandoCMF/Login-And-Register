@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Lato&amp;display=swap" rel="stylesheet">
-    <link href="https://css.gg/css" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://css.gg/css" rel="stylesheet" />
     <title>Formulario</title>
     <script type="text/javascript" src="./index.js" defer=""></script>
-    <link rel="stylesheet" href="./index.css">
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
   </head>
 
   <body>
@@ -24,29 +30,112 @@
       </nav>
 
       <form action="#" class="search-bar">
-        <input type="text" placeholder="Search...">
+        <input type="text" placeholder="Search..." />
         <button type="submit"><i class="gg-search"></i></button>
       </form>
     </header>
+    <div class="background"></div>
     <section class="container">
       <div class="content">
-        <h2><i class="gg-bee"></i>Nando</h2>
+        <h2 class="logo">
+          <i class="bx bx-bug"></i>
+          Nando
+        </h2>
+
         <div class="text-sci">
-          <h2>Welcome!
-            <br>
+          <h2>
+            Welcome!
+            <br />
             <span>To our New Website.</span>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur leo felis. </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+              consectetur leo felis.
+            </p>
           </h2>
           <div class="social-icons">
-            <a href="#"></a>
+            <a href="#">
+              <i class="bx bxl-github"></i>
+            </a>
+            <a href="#">
+              <i class="bx bxl-linkedin-square"></i>
+            </a>
+            <a href="#">
+              <i class="bx bxl-instagram"></i>
+            </a>
           </div>
         </div>
       </div>
-      <div class="logreg-box"></div>
+      <div class="logreg-box">
+        <div class="form-box login">
+          <form action="#">
+            <h2>Sign In</h2>
+            <div class="input-box">
+              <span class="icon"><i class="bx bxs-envelope"></i></span>
+              <input type="email" required />
+              <label>Email</label>
+            </div>
+
+            <div class="input-box">
+              <span class="icon"><i class="bx bxs-lock-alt"></i></span>
+              <input type="password" required />
+              <label>Password</label>
+            </div>
+            <div class="remember-forgot">
+              <label>
+                <input type="checkbox" />
+                Remember me
+              </label>
+              <a href="#">Forgot passoword?</a>
+            </div>
+            <button type="submit" class="btn">Sign In</button>
+
+            <div class="login-register">
+              <p>
+                Don't have an account?
+                <a class="register-link" href="#">Sign up</a>
+              </p>
+            </div>
+          </form>
+        </div>
+
+        <div class="form-box register">
+          <form action="#">
+            <h2>Sign Up</h2>
+            <div class="input-box">
+              <span class="icon"><i class="bx bxs-user"></i></span>
+              <input type="text" required />
+              <label>Name</label>
+            </div>
+
+            <div class="input-box">
+              <span class="icon"><i class="bx bxs-envelope"></i></span>
+              <input type="email" required />
+              <label>Email</label>
+            </div>
+
+            <div class="input-box">
+              <span class="icon"><i class="bx bxs-lock-alt"></i></span>
+              <input type="password" required />
+              <label>Password</label>
+            </div>
+            <div class="remember-forgot">
+              <label>
+                <input type="checkbox" />
+                I agree to the terms & conditions
+              </label>
+            </div>
+            <button type="submit" class="btn">Sign Un</button>
+
+            <div class="login-register">
+              <p>
+                Already have an account?
+                <a class="login-link" href="#">Sign in</a>
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
     </section>
-
-
-
+    <script src="./script.js"></script>
   </body>
-
 </html>
